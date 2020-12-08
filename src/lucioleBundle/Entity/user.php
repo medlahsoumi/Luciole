@@ -63,6 +63,15 @@ class user
      */
     private $telephone;
 
+    /**
+     * user constructor.
+     * @param int $id
+     */
+    public function __construct()
+    {
+
+    }
+
 
     /**
      * Get id
@@ -217,5 +226,6 @@ class user
     {
         return $this->telephone;
     }
+
 }
 

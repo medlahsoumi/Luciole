@@ -1,62 +1,42 @@
 
-article_homepage:
+homepage:
     path:     /
-    defaults: { _controller: ArticleBundle:Default:index }
-create_article:
-    path:     /create-article
-    defaults: { _controller: ArticleBundle:Article:create }
+    defaults: { _controller: lucioleBundle:Default:index }
 
-delete_article:
-    path:     /Delete-article/{id}
-    defaults: { _controller: ArticleBundle:Article:delete }
+create_luciole:
+    path:     /create-luciole
+    defaults: { _controller: lucioleBundle:publicity:new }
+create_user:
+    path:     /create-user
+    defaults: { _controller: lucioleBundle:user:new }
 
-show-articles-front:
-    path:     /show-articles-front/
-    defaults: { _controller: ArticleBundle:Article:showFront }
+delete_luciole:
+    path:     /Delete-luciole/{id}
+    defaults: { _controller: lucioleBundle:publicity:delete }
+delete_user:
+    path:     /Delete-luciole/{id}
+    defaults: { _controller: lucioleBundle:user:delete }
 
-rate-articles-front:
-    path:     /rate-articles-front/{rate}/{id}
-    defaults: { _controller: ArticleBundle:Article:rate }
+update-luciole:
+    path:     /update-luciole/{id}
+    defaults: { _controller: lucioleBundle:publicity:update }
+update-user:
+    path:     /update-luciole/{id}
+    defaults: { _controller: lucioleBundle:user:update }
 
-show-articles:
-    path:     /show-articles
-    defaults: { _controller: ArticleBundle:Article:show }
-show-articles2:
-    path:     /show-articles2
-    defaults: { _controller: ArticleBundle:Article:show2 }
-
-update-article:
-    path:     /update-article/{id}
-    defaults: { _controller: ArticleBundle:Article:update }
-
-view-article:
+view-luciole:
     path:     /view-article/{id}
-    defaults: { _controller: ArticleBundle:Article:view }
-article_search:
+    defaults: { _controller: lucioleBundle:Article:view }
+
+show-luciole:
+    path:     /show-luciole/
+    defaults: { _controller: lucioleBundle:publicity:show }
+show-user:
+    path:     /show-users
+    defaults: { _controller: lucioleBundle:user:show }
+
+
+luciole_search:
     path:   /search-article
-    defaults: { _controller: ArticleBundle:Article:search }
+    defaults: { _controller: lucioleBundle:Article:search }
 
-
-# ---------------------------------------------------------------
-create_category:
-    path:     /create-category
-    defaults: { _controller: ArticleBundle:Category:create }
-
-delete_category:
-    path:     /Delete-category/{id}
-    defaults: { _controller: ArticleBundle:Category:delete }
-
-show-category:
-    path:     /show-category
-    defaults: { _controller: ArticleBundle:Category:show }
-
-update-category:
-    path:     /update-category/{id}
-    defaults: { _controller: ArticleBundle:Category:update }
-
-view-category:
-    path:     /view-category/{id}
-    defaults: { _controller: ArticleBundle:Category:view }
-category_search:
-    path:   /search-Category
-    defaults: { _controller: ArticleBundle:Category:search }
