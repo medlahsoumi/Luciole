@@ -1,0 +1,51 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <h1>Publicities list</h1>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Id</th>
+                <th>Titre</th>
+                <th>Description</th>
+                <th>Video</th>
+                <th>Zone</th>
+                <th>Datedebut</th>
+                <th>Datefin</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+        {% for publicity in publicities %}
+            <tr>
+                <td><a href="{{ path('publicity_show', { 'id': publicity.id }) }}">{{ publicity.id }}</a></td>
+                <td>{{ publicity.iD }}</td>
+                <td>{{ publicity.titre }}</td>
+                <td>{{ publicity.description }}</td>
+                <td>{{ publicity.video }}</td>
+                <td>{{ publicity.zone }}</td>
+                <td>{% if publicity.dateDebut %}{{ publicity.dateDebut|date('Y-m-d') }}{% endif %}</td>
+                <td>{% if publicity.dateFin %}{{ publicity.dateFin|date('Y-m-d') }}{% endif %}</td>
+                <td>
+                    <ul>
+                        <li>
+                            <a href="{{ path('publicity_show', { 'id': publicity.id }) }}">show</a>
+                        </li>
+                        <li>
+                            <a href="{{ path('publicity_edit', { 'id': publicity.id }) }}">edit</a>
+                        </li>
+                    </ul>
+                </td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+
+    <ul>
+        <li>
+            <a href="{{ path('publicity_new') }}">Create a new publicity</a>
+        </li>
+    </ul>
+{% endblock %}
