@@ -17,7 +17,36 @@ class userType extends AbstractType
      */
     public function buildForm(FormBuilderInterface $builder, array $options)
     {
-        $builder->add('cIN')->add('nom')->add('prenom')->add('typeVoiture')->add('matricule')->add('telephone');
+        $builder->add('cIN', null,array(
+            'label'  => 'CIN',
+            'attr'   =>  array(
+                'class'   => 'form-control')
+        ))
+            ->add('nom', null,array(
+        'label'  => 'nom',
+        'attr'   =>  array(
+            'class'   => 'form-control')
+    ))
+            ->add('prenom', null,array(
+                'label'  => 'Prenom',
+                'attr'   =>  array(
+                    'class'   => 'form-control')
+            ))
+            ->add('typeVoiture', null,array(
+                'label'  => 'type de Voiture',
+                'attr'   =>  array(
+                    'class'   => 'form-control')
+            ))
+            ->add('matricule', null,array(
+                'label'  => 'Matricule',
+                'attr'   =>  array(
+                    'class'   => 'form-control')
+            ))
+            ->add('telephone', null,array(
+                'label'  => 'Telephone',
+                'attr'   =>  array(
+                    'class'   => 'form-control')
+            ));
     }/**
      * {@inheritdoc}
      */
