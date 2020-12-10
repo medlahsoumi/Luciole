@@ -5,52 +5,54 @@
 
     <table>
         <tbody>
+        {% for publicities in publicity %}
             <tr>
                 <th>Id</th>
-                <td>{{ publicity.id }}</td>
+                <td>{{ publicities.id }}</td>
             </tr>
             <tr>
                 <th>Id</th>
-                <td>{{ publicity.iD }}</td>
+                <td>{{ publicities.iD }}</td>
             </tr>
             <tr>
                 <th>Titre</th>
-                <td>{{ publicity.titre }}</td>
+                <td>{{ publicities.titre }}</td>
             </tr>
             <tr>
                 <th>Description</th>
-                <td>{{ publicity.description }}</td>
+                <td>{{ publicities.description }}</td>
             </tr>
             <tr>
                 <th>Video</th>
-                <td>{{ publicity.video }}</td>
+                <td>{{ publicities.video }}</td>
             </tr>
             <tr>
                 <th>Zone</th>
-                <td>{{ publicity.zone }}</td>
+                <td>{{ publicities.zone }}</td>
             </tr>
             <tr>
                 <th>Datedebut</th>
-                <td>{% if publicity.dateDebut %}{{ publicity.dateDebut|date('Y-m-d') }}{% endif %}</td>
+                <td>  {{ publicities.dateDebut | date('d/m/Y') }}</td>
+
             </tr>
             <tr>
                 <th>Datefin</th>
-                <td>{% if publicity.dateFin %}{{ publicity.dateFin|date('Y-m-d') }}{% endif %}</td>
+                <td>  {{ publicities.dateFin | date('d/m/Y') }}</td>
+
             </tr>
+        {% endfor %}
         </tbody>
     </table>
 
     <ul>
         <li>
-            <a href="{{ path('publicity_index') }}">Back to the list</a>
+            <a href="{{ path('homepage') }}">Back to the list</a>
         </li>
         <li>
-            <a href="{{ path('publicity_edit', { 'id': publicity.id }) }}">Edit</a>
+            <a  >Edit</a>
         </li>
         <li>
-            {{ form_start(delete_form) }}
-                <input type="submit" value="Delete">
-            {{ form_end(delete_form) }}
+
         </li>
     </ul>
 {% endblock %}

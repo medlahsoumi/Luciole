@@ -84,6 +84,14 @@ class user
     }
 
     /**
+     * @param int $id
+     */
+    public function setId($id)
+    {
+        $this->id = $id;
+    }
+
+    /**
      * Set cIN
      *
      * @param string $cIN

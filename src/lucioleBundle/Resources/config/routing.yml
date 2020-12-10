@@ -14,29 +14,29 @@ delete_luciole:
     path:     /Delete-luciole/{id}
     defaults: { _controller: lucioleBundle:publicity:delete }
 delete_user:
-    path:     /Delete-luciole/{id}
+    path:     /Delete-user/{id}
     defaults: { _controller: lucioleBundle:user:delete }
 
 update-luciole:
     path:     /update-luciole/{id}
     defaults: { _controller: lucioleBundle:publicity:update }
 update-user:
-    path:     /update-luciole/{id}
+    path:     /update-user/{id}
     defaults: { _controller: lucioleBundle:user:update }
 
 view-luciole:
-    path:     /view-article/{id}
-    defaults: { _controller: lucioleBundle:Article:view }
+    path:     /view-luciole/{id}
+    defaults: { _controller: lucioleBundle:publicity:view }
 
 show-luciole:
-    path:     /show-luciole/
-    defaults: { _controller: lucioleBundle:publicity:show }
+    path:     /show-luciole
+    defaults: { _controller: lucioleBundle:publicity:show2 }
 show-user:
     path:     /show-users
-    defaults: { _controller: lucioleBundle:user:show }
+    defaults: { _controller: lucioleBundle:user:show2 }
 
 
 luciole_search:
-    path:   /search-article
-    defaults: { _controller: lucioleBundle:Article:search }
+    path:   /search-luciole
+    defaults: { _controller: lucioleBundle:publicity:search }
 

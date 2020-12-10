@@ -1,7 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1885a1c0-670f-4dcc-9ad3-715a4ff65f7d" name="Default Changelist" comment="" />
+    <list default="true" id="1885a1c0-670f-4dcc-9ad3-715a4ff65f7d" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Resources/views/base.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/app/Resources/views/base.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Resources/views/default/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/app/Resources/views/default/index.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Resources/views/publicity/show.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/app/Resources/views/publicity/show.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Resources/views/user/edit.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/app/Resources/views/user/edit.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Resources/views/user/new.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/app/Resources/views/user/new.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Resources/views/user/show.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/app/Resources/views/user/show.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lucioleBundle/Controller/publicityController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/lucioleBundle/Controller/publicityController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lucioleBundle/Controller/userController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/lucioleBundle/Controller/userController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lucioleBundle/Entity/user.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/lucioleBundle/Entity/user.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lucioleBundle/Form/publicityType.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/lucioleBundle/Form/publicityType.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lucioleBundle/Resources/config/routing.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/lucioleBundle/Resources/config/routing.yml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -99,7 +114,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1607459854013</updated>
-      <workItem from="1607459887703" duration="10112000" />
+      <workItem from="1607459887703" duration="11373000" />
+      <workItem from="1607539270666" duration="11792000" />
     </task>
     <servers />
   </component>
@@ -116,6 +132,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />

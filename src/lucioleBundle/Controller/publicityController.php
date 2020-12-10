@@ -3,9 +3,14 @@
 namespace lucioleBundle\Controller;
 
 use lucioleBundle\Entity\publicity;
+use Symfony\Component\HttpFoundation\File\File;
+use Symfony\Component\Form\Extension\Core\Type\SubmitType;
+use Symfony\Component\HttpFoundation\Response;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Method;
-use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;use Symfony\Component\HttpFoundation\Request;
+use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
+use Symfony\Component\HttpFoundation\File\Exception\FileException;
+use Symfony\Component\HttpFoundation\Request;
 
 /**
  * Publicity controller.
@@ -44,13 +49,13 @@ class publicityController extends Controller
         $form->handleRequest($request);
 
         if ($form->isSubmitted() && $form->isValid()) {
+            $publicity->setVideo("abccc");
             $em = $this->getDoctrine()->getManager();
             $em->persist($publicity);
             $em->flush();
 
-            return $this->redirectToRoute('publicity_show', array('id' => $publicity->getId()));
+            return $this->redirectToRoute('show-luciole', array('id' => $publicity->getId()));
         }
-
         return $this->render('publicity/new.html.twig', array(
             'publicity' => $publicity,
             'form' => $form->createView(),
@@ -63,6 +68,14 @@ class publicityController extends Controller
      * @Route("/{id}", name="publicity_show")
      * @Method("GET")
      */
+    public function show2Action() {
+        $repository  = $this->getDoctrine() ->getRepository(publicity::class);
+        $publicity = $repository->findAll();
+        return $this->render(
+            'publicity/show.html.twig',
+            array('publicity' => $publicity)
+        );
+    }
     public function showAction(publicity $publicity)
     {
         $deleteForm = $this->createDeleteForm($publicity);
@@ -104,19 +117,24 @@ class publicityController extends Controller
      * @Route("/{id}", name="publicity_delete")
      * @Method("DELETE")
      */
-    public function deleteAction(Request $request, publicity $publicity)
-    {
-        $form = $this->createDeleteForm($publicity);
-        $form->handleRequest($request);
+    public function deleteAction($id) {
 
-        if ($form->isSubmitted() && $form->isValid()) {
-            $em = $this->getDoctrine()->getManager();
-            $em->remove($publicity);
-            $em->flush();
+        $em = $this->getDoctrine()->getManager();
+        $pub = $em->getRepository('lucioleBundle:publicity')->find($id);
+
+        if (!$pub) {
+            throw $this->createNotFoundException(
+                'There are no publicities with the following id: ' . $id
+            );
         }
 
-        return $this->redirectToRoute('publicity_index');
+        $em->remove($pub);
+        $em->flush();
+
+        return $this->redirect('/publicity/show.html.twig');
+
     }
+
 
     /**
      * Creates a form to delete a publicity entity.

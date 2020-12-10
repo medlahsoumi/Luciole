@@ -72,7 +72,14 @@ class userController extends Controller
             'delete_form' => $deleteForm->createView(),
         ));
     }
-
+    public function show2Action() {
+        $repository  = $this->getDoctrine() ->getRepository(user::class);
+        $user = $repository->findAll();
+        return $this->render(
+            'user/show.html.twig',
+            array('user' => $user)
+        );
+    }
     /**
      * Displays a form to edit an existing user entity.
      *
