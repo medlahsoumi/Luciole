@@ -1,0 +1,42 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+     <br><br><br><br><br>
+    {% if error %}
+        <div>{{ error.messageKey|trans(error.messageData, 'security') }}</div>
+    {% endif %}
+    <div class="row">
+    <div class="col-sm-12">
+    <div class="panel panel-default card-view">
+    <div class="panel-wrapper collapse in">
+    <div class="panel-body pt-0">
+    <div class="form-wrap">
+    <form action="{{ path('login') }}" method="post" class="control-label mb-10">
+        <h6 class="txt-dark flex flex-middle  capitalize-font"><i class="font-20 txt-grey zmdi zmdi-info-outline mr-10"></i>Login</h6>
+
+        <label for="username">Nom:</label>
+        <input type="text" id="username"  class="form-control" name="_username" value="{{ last_username }}"/>
+
+        <label for="password">Cin:</label>
+
+        <input type="password" id="password" class="form-control" name="_password"/>
+        <br>
+        {#
+        If you want to control the URL the user
+        is redirected to on success (more details below)
+        <input type="hidden" name="_target_path" value="/account"/>
+        #}
+
+        <button type="submit" class="btn btn-orange btn-icon left-icon mr-10 pull-left">login</button>
+        <a href="{{ path('create_user') }}" class="btn btn-default pull-left">Register</a>
+    </form>
+
+
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+
+{% endblock %}

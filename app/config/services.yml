@@ -24,6 +24,9 @@ services:
 
     # controllers are imported separately to make sure they're public
     # and have a tag that allows actions to type-hint services
+    lucioleBundle\Controller\RegistrationController:
+        autowire: true # or define your controller constructor and configure its arguments explicitly
+        tags: [ 'controller.service_arguments' ]
     AppBundle\Controller\:
         resource: '../../src/AppBundle/Controller'
         public: true

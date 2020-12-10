@@ -10,6 +10,7 @@ use Symfony\Component\Form\Extension\Core\Type\TextType;
 use Symfony\Component\Form\FormBuilderInterface;
 use Symfony\Component\OptionsResolver\OptionsResolver;
 
+
 class userType extends AbstractType
 {
     /**
@@ -17,7 +18,23 @@ class userType extends AbstractType
      */
     public function buildForm(FormBuilderInterface $builder, array $options)
     {
-        $builder->add('cIN', null,array(
+        $builder            ->add('email', EmailType::class,array(
+            'label'  => 'Email',
+            'attr'   =>  array(
+                'class'   => 'form-control')
+        ))
+            ->add('username', TextType::class,array(
+                'label'  => 'username',
+                'attr'   =>  array(
+                    'class'   => 'form-control'
+                   )
+            ))
+            ->add('plainPassword', RepeatedType::class, [
+                'type' => PasswordType::class,
+                'first_options'  => ['label' => 'Password'],
+                'second_options' => ['label' => 'Repeat Password'],
+            ])
+            ->add('cIN', null,array(
             'label'  => 'CIN',
             'attr'   =>  array(
                 'class'   => 'form-control')

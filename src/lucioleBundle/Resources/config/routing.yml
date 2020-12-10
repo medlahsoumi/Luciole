@@ -34,9 +34,14 @@ show-luciole:
 show-user:
     path:     /show-users
     defaults: { _controller: lucioleBundle:user:show2 }
-
+login:
+    path: /login
+    defaults: { _controller: lucioleBundle:Security:login }
 
 luciole_search:
     path:   /search-luciole
     defaults: { _controller: lucioleBundle:publicity:search }
 
+user_registration:
+    path:     /register
+    defaults: { _controller: lucioleBundle:Registration:register }

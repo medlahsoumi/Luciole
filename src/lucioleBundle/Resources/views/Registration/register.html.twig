@@ -1,0 +1,11 @@
+{% extends "::base.html.twig" %}
+
+{% block title %}Register{% endblock %}
+
+{% block body %}
+<h1>Welcome to the Registration:register page</h1>
+    {{ form_start(form) }}
+    <input type="submit" value="Register" class="btn btn-orange btn-icon left-icon mr-10 pull-left" />
+    {{ form_end(form) }}
+
+{% endblock %}
