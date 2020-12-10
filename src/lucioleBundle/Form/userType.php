@@ -9,7 +9,7 @@ use Symfony\Component\Form\Extension\Core\Type\RepeatedType;
 use Symfony\Component\Form\Extension\Core\Type\TextType;
 use Symfony\Component\Form\FormBuilderInterface;
 use Symfony\Component\OptionsResolver\OptionsResolver;
-
+use Symfony\Component\Form\Extension\Core\Type\SubmitType;
 
 class userType extends AbstractType
 {
@@ -63,7 +63,10 @@ class userType extends AbstractType
                 'label'  => 'Telephone',
                 'attr'   =>  array(
                     'class'   => 'form-control')
-            ));
+            ))
+            ->add('Create', SubmitType::class, [
+                'attr' => ['class' => 'btn btn-orange btn-icon left-icon mr-10 pull-left'],
+            ]);
     }/**
      * {@inheritdoc}
      */

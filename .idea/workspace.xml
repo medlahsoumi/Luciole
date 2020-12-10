@@ -2,32 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1885a1c0-670f-4dcc-9ad3-715a4ff65f7d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/Resources/views/default/login.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/lucioleBundle/Controller/RegistrationController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/lucioleBundle/Controller/SecurityController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/lucioleBundle/Resources/views/Registration/register.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/lucioleBundle/Resources/views/Security/login.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/lucioleBundle/Resources/views/Security/logout.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/lucioleBundle/Tests/Controller/RegistrationControllerTest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/lucioleBundle/Tests/Controller/SecurityControllerTest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/hencework.com/theme/admintres/img/logo1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/hencework.com/theme/admintres/img/luciole1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/hencework.com/theme/admintres/img/luciole3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/hencework.com/theme/admintres/img/luciole4.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Resources/views/base.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/app/Resources/views/base.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/config/config.yml" beforeDir="false" afterPath="$PROJECT_DIR$/app/config/config.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/config/security.yml" beforeDir="false" afterPath="$PROJECT_DIR$/app/config/security.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/config/services.yml" beforeDir="false" afterPath="$PROJECT_DIR$/app/config/services.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lucioleBundle/Entity/user.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/lucioleBundle/Entity/user.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/lucioleBundle/Form/userType.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/lucioleBundle/Form/userType.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lucioleBundle/Repository/userRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/lucioleBundle/Repository/userRepository.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lucioleBundle/Resources/config/routing.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/lucioleBundle/Resources/config/routing.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/web/css/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/hencework.com/theme/admintres/demo-1/index-2.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/hencework.com/theme/admintres/demo-1/index-2.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/hencework.com/theme/admintres/demo-1/index2.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/hencework.com/theme/admintres/demo-1/index2.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/hencework.com/theme/admintres/img/brand.png" beforeDir="false" afterPath="$PROJECT_DIR$/web/hencework.com/theme/admintres/img/brand.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/hencework.com/theme/admintres/img/logo.png" beforeDir="false" afterPath="$PROJECT_DIR$/web/hencework.com/theme/admintres/img/logo.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lucioleBundle/Resources/views/Registration/register.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/src/lucioleBundle/Resources/views/Registration/register.html.twig" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -133,7 +110,7 @@
       <option name="presentableId" value="Default" />
       <updated>1607459854013</updated>
       <workItem from="1607459887703" duration="11373000" />
-      <workItem from="1607539270666" duration="31844000" />
+      <workItem from="1607539270666" duration="33105000" />
     </task>
     <servers />
   </component>
