@@ -27,7 +27,11 @@ class SecurityController extends Controller
         ]);
 
     }
+    public function ForgotAction()
+    {
+        return $this->render('default/forgot.html.twig');
 
+    }
     /**
      * @Route("/logout")
      */

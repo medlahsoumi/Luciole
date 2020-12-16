@@ -41,7 +41,13 @@ login:
 luciole_search:
     path:   /search-luciole
     defaults: { _controller: lucioleBundle:publicity:search }
-
+Forgot_luciole:
+    path:     /forgot-password
+    defaults: { _controller: lucioleBundle:Security:Forgot }
 user_registration:
     path:     /register
     defaults: { _controller: lucioleBundle:Registration:register }
+
+contact_luciole:
+    path:     /contact
+    defaults: { _controller: lucioleBundle:user:contact }

@@ -2,9 +2,70 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1885a1c0-670f-4dcc-9ad3-715a4ff65f7d" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/app/Resources/views/base2.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Resources/views/default/forgot.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Resources/views/user/contact.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/hencework.com/theme/admintres/img/Luciolef (2).png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/hencework.com/theme/admintres/img/Luciolef.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/hencework.com/theme/admintres/img/heading-bg/slide1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/hencework.com/theme/admintres/img/money/luciole3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/hencework.com/theme/admintres/img/products/Ooredoo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/hencework.com/theme/admintres/img/products/biat.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/hencework.com/theme/admintres/img/products/bolt.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/hencework.com/theme/admintres/img/products/delice.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/hencework.com/theme/admintres/img/products/esprit.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/hencework.com/theme/admintres/img/products/geant.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/hencework.com/theme/admintres/img/products/jumia.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/hencework.com/theme/admintres/img/products/sablito.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/hencework.com/theme/admintres/img/products/samsung.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/hencework.com/theme/admintres/img/products/shell.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/hencework.com/theme/admintres/img/products/sicam.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/hencework.com/theme/admintres/img/slide_original/slide1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/hencework.com/theme/admintres/img/slide_original/slide2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/hencework.com/theme/admintres/img/slide_original/slide3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/hencework.com/theme/admintres/img/slide_original/slide4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/hencework.com/theme/admintres/img/slide_original/slide6.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/hencework.com/theme/admintres/img/user6.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/hencework.com/theme/admintres/img/users/user.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/hencework.com/theme/admintres/img/users/user1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/hencework.com/theme/admintres/img/users/user2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/hencework.com/theme/admintres/img/users/user3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/hencework.com/theme/admintres/img/users/user4.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Resources/views/base.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/app/Resources/views/base.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Resources/views/default/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/app/Resources/views/default/index.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Resources/views/default/login.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/app/Resources/views/default/login.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Resources/views/index.html.twig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Resources/views/publicity/show.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/app/Resources/views/publicity/show.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Resources/views/user/show.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/app/Resources/views/user/show.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lucioleBundle/Controller/RegistrationController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/lucioleBundle/Controller/RegistrationController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lucioleBundle/Controller/SecurityController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/lucioleBundle/Controller/SecurityController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lucioleBundle/Controller/userController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/lucioleBundle/Controller/userController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/lucioleBundle/Form/userType.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/lucioleBundle/Form/userType.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lucioleBundle/Resources/config/routing.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/lucioleBundle/Resources/config/routing.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/lucioleBundle/Resources/views/Registration/register.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/src/lucioleBundle/Resources/views/Registration/register.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lucioleBundle/Resources/views/Security/login.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/src/lucioleBundle/Resources/views/Security/login.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/hencework.com/theme/admintres/demo-1/add-products.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/hencework.com/theme/admintres/demo-1/add-products.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/hencework.com/theme/admintres/demo-1/carousel.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/hencework.com/theme/admintres/demo-1/carousel.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/hencework.com/theme/admintres/demo-1/contact-card.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/hencework.com/theme/admintres/demo-1/contact-card.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/hencework.com/theme/admintres/demo-1/forgot-password.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/hencework.com/theme/admintres/demo-1/forgot-password.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/hencework.com/theme/admintres/demo-1/index-2.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/hencework.com/theme/admintres/demo-1/index-2.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/hencework.com/theme/admintres/demo-1/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/hencework.com/theme/admintres/demo-1/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/hencework.com/theme/admintres/demo-1/index2.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/hencework.com/theme/admintres/demo-1/index2.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/hencework.com/theme/admintres/demo-1/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/hencework.com/theme/admintres/demo-1/login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/hencework.com/theme/admintres/img/brand.png" beforeDir="false" afterPath="$PROJECT_DIR$/web/hencework.com/theme/admintres/img/brand.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/hencework.com/theme/admintres/img/heading-bg/slide1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/hencework.com/theme/admintres/img/heading-bg/slide2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/hencework.com/theme/admintres/img/heading-bg/slide3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/hencework.com/theme/admintres/img/heading-bg/slide4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/hencework.com/theme/admintres/img/heading-bg/slide6.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/hencework.com/theme/admintres/img/luciole1.png" beforeDir="false" afterPath="$PROJECT_DIR$/web/hencework.com/theme/admintres/img/luciole1.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/hencework.com/theme/admintres/img/luciole3.png" beforeDir="false" afterPath="$PROJECT_DIR$/web/hencework.com/theme/admintres/img/luciole3.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/hencework.com/theme/admintres/img/user.png" beforeDir="false" afterPath="$PROJECT_DIR$/web/hencework.com/theme/admintres/img/user.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/hencework.com/theme/admintres/img/user1.png" beforeDir="false" afterPath="$PROJECT_DIR$/web/hencework.com/theme/admintres/img/user1.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/hencework.com/theme/admintres/img/user2.png" beforeDir="false" afterPath="$PROJECT_DIR$/web/hencework.com/theme/admintres/img/user2.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/hencework.com/theme/admintres/img/user3.png" beforeDir="false" afterPath="$PROJECT_DIR$/web/hencework.com/theme/admintres/img/user3.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/hencework.com/theme/admintres/img/user4.png" beforeDir="false" afterPath="$PROJECT_DIR$/web/hencework.com/theme/admintres/img/user4.png" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -94,6 +155,9 @@
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\xampp\htdocs\Luciole\src\lucioleBundle\Resources\views" />
     </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\Luciole\app\Resources\views" />
+    </key>
   </component>
   <component name="RunManager">
     <configuration name="phpunit.xml.dist" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
@@ -110,7 +174,11 @@
       <option name="presentableId" value="Default" />
       <updated>1607459854013</updated>
       <workItem from="1607459887703" duration="11373000" />
-      <workItem from="1607539270666" duration="33105000" />
+      <workItem from="1607539270666" duration="33646000" />
+      <workItem from="1607682514400" duration="290000" />
+      <workItem from="1607692996929" duration="7189000" />
+      <workItem from="1608124163882" duration="11253000" />
+      <workItem from="1608147288346" duration="9969000" />
     </task>
     <servers />
   </component>

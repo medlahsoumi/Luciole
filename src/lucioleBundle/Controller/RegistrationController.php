@@ -14,6 +14,7 @@ class RegistrationController extends Controller
     /**
      * @Route("/register", name="user_registration")
      */
+
     public function registerAction(Request $request, UserPasswordEncoderInterface $passwordEncoder)
     {
         // 1) build the form

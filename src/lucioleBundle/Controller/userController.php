@@ -30,7 +30,14 @@ class userController extends Controller
             'users' => $users,
         ));
     }
+    public function contactAction()
+    {
+        $em = $this->getDoctrine()->getManager();
 
+        $users = $em->getRepository('lucioleBundle:user')->findAll();
+
+        return $this->render('user/contact.html.twig');
+    }
     /**
      * Creates a new user entity.
      *

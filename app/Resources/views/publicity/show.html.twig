@@ -2,48 +2,56 @@
 
 {% block body %}
     <h1>Publicity</h1>
+    <div class="row">
+        <!-- Responsive Table -->
+        <div class="col-lg-12">
+            <div class="panel panel-default border-panel card-view">
+                <div class="panel-heading">
+                    <div class="pull-left">
+                        <h6 class="panel-title txt-dark">List of all LUCIOLE publicities </h6>
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+                <div class="panel-wrapper collapse in">
+                    <div class="panel-body">
+                       <div class="table-wrap mt-40">
+                            <div class="table-responsive">
+                                <table class="table mb-0">
+                                    <thead>
+                                    <tr>
+                                        <th class="active">Title</th>
+                                        <th class="active">Description</th>
+                                        <th class="active">Video</th>
+                                        <th class="active">Zone</th>
+                                        <th class="active">Start Date</th>
+                                        <th class="active">End Date</th>
+                                        <th>Action</th>
 
-    <table>
-        <tbody>
-        {% for publicities in publicity %}
-            <tr>
-                <th>Id</th>
-                <td>{{ publicities.id }}</td>
-            </tr>
-            <tr>
-                <th>Id</th>
-                <td>{{ publicities.iD }}</td>
-            </tr>
-            <tr>
-                <th>Titre</th>
-                <td>{{ publicities.titre }}</td>
-            </tr>
-            <tr>
-                <th>Description</th>
-                <td>{{ publicities.description }}</td>
-            </tr>
-            <tr>
-                <th>Video</th>
-                <td>{{ publicities.video }}</td>
-            </tr>
-            <tr>
-                <th>Zone</th>
-                <td>{{ publicities.zone }}</td>
-            </tr>
-            <tr>
-                <th>Datedebut</th>
-                <td>  {{ publicities.dateDebut | date('d/m/Y') }}</td>
+                                    </tr>
+                                    </thead>
+                                    <tbody>
+                                    {% for publicities in publicity %}
+                                        <tr>
+                                            <td><a href="javascript:void(0)">{{ publicities.titre }}</a></td>
+                                            <td>{{ publicities.description }}</td>
+                                            <td>{{ publicities.video }}</td>
+                                            <td>{{ publicities.zone }}</td>
+                                            <td><span class="text-muted"><i class="fa fa-clock-o"></i> {{ publicities.dateDebut | date('d/m/Y') }}</span> </td>
+                                            <td><span class="text-muted"><i class="fa fa-clock-o"></i>{{ publicities.dateFin | date('d/m/Y') }}</span> </td>
+                                            <td><a href="javascript:void(0)" class="text-inverse pr-10" title="Edit" data-toggle="tooltip"><i class="zmdi zmdi-edit txt-warning"></i></a><a href="javascript:void(0)" class="text-inverse" title="Delete" data-toggle="tooltip"><i class="zmdi zmdi-delete txt-danger"></i></a></td>
 
-            </tr>
-            <tr>
-                <th>Datefin</th>
-                <td>  {{ publicities.dateFin | date('d/m/Y') }}</td>
-
-            </tr>
-        {% endfor %}
-        </tbody>
-    </table>
-
+                                        </tr>
+                                    {% endfor %}
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /Responsive Table -->
+    </div>
     <ul>
         <li>
             <a href="{{ path('homepage') }}">Back to the list</a>
